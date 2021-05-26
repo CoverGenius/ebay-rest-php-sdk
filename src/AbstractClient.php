@@ -14,7 +14,7 @@ abstract class AbstractClient extends GuzzleClient
      * GuzzleClient constructor to make this more testable. This will allow us
      * to pass an instance of the Client with a mocked handler in our tests.
      */
-    public function __construct(ClientInterface $client, array $config)
+    public function __construct(ClientInterface $client)
     {
         $baseUri = $client->getConfig('base_uri');
 
@@ -24,7 +24,7 @@ abstract class AbstractClient extends GuzzleClient
             null,
             null,
             null,
-            $config,
+            $client->getConfig(),
         );
     }
 
@@ -33,13 +33,13 @@ abstract class AbstractClient extends GuzzleClient
      */
     public static function create(array $config = []): self
     {
-        $headers = array_merge([
+        $configDefaults = array_merge([
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
             'timeout' => 15,
         ], $config);
 
-        return new static(new Client($headers), $config);
+        return new static(new Client($configDefaults));
     }
 
     /**
