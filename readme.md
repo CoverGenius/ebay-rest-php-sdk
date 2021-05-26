@@ -1,7 +1,10 @@
 # Ebay REST PHP Sdk
 
 ## Getting Started
-TBD
+
+```bash
+composer require covergenius/ebay-rest-php-sdk
+```
 
 ## Available APIs
 
@@ -51,4 +54,4 @@ composer test -- --group groupName
 ### VCR tests
 
 Note: You will need to generate a new access token and add it to the `EBAY_ACCESS_TOKEN` variable in your `.env` file. 
-Once you have a valid access token you can delete a vcr tape associated with the test you want to re-record.
+Using your valid access token, you may delete a vcr tape associated with the test you want to re-record.
