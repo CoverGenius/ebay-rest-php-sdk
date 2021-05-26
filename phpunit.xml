@@ -8,17 +8,12 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
+
   <testsuites>
     <testsuite name="Unit">
       <directory suffix="Test.php">./tests</directory>
     </testsuite>
   </testsuites>
-
-  <coverage processUncoveredFiles="true">
-    <include>
-      <directory suffix=".php">./src</directory>
-    </include>
-  </coverage>
 
   <listeners>
     <listener class="VCR\PHPUnit\TestListener\VCRTestListener"
