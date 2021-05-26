@@ -1,5 +1,12 @@
 # Ebay REST PHP Sdk
 
+<p align="center">
+    <a href="https://github.com/CoverGenius/ebay-rest-php-sdk/actions"><img src="https://github.com/CoverGenius/ebay-rest-php-sdk/workflows/tests/badge.svg" alt="Build Status"></a>
+    <a href="https://packagist.org/packages/CoverGenius/ebay-rest-php-sdk"><img src="https://poser.pugx.org/CoverGenius/ebay-rest-php-sdk/d/total.svg" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/CoverGenius/ebay-rest-php-sdk"><img src="https://poser.pugx.org/CoverGenius/ebay-rest-php-sdk/v/stable.svg" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/CoverGenius/ebay-rest-php-sdk"><img src="https://poser.pugx.org/CoverGenius/ebay-rest-php-sdk/license.svg" alt="MIT license"></a>
+</p>
+
 ## Getting Started
 
 ### Requirements
