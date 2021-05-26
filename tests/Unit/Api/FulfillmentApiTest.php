@@ -12,13 +12,11 @@ class FulfillmentApiTest extends TestCase
      */
     public function testGetOrder()
     {
-        var_dump($this->config());
-
         $order = FulfillmentApi::create($this->config())->getOrder([
-            'orderId' => 'ORDER_ID'
+            'orderId' => '09-06721-09981'
         ]);
 
-        $this->assertEquals('ORDER_ID', $order->offsetGet('orderId'));
+        $this->assertEquals('09-06721-09981', $order->offsetGet('orderId'));
     }
 
     /**
@@ -27,11 +25,15 @@ class FulfillmentApiTest extends TestCase
     public function testIssueRefund()
     {
         $refund = FulfillmentApi::create($this->config())->issueRefund([
-            'orderId' => 'ORDER_ID',
-            'reasonForRefund' => FulfillmentApi::OTHER_ADJUSTMENT_REFUND_REASON,
+            'orderId' => '09-06721-09981',
+            'reasonForRefund' => FulfillmentApi::BUYER_CANCEL_REFUND_REASON,
+            'orderLevelRefundAmount' => [
+                'currency' => 'USD',
+                'value' => '0.01',
+            ]
         ]);
 
-        $this->assertEquals('ORDER_ID', $refund->offsetGet('refundId'));
+        $this->assertEquals('5018168125', $refund->offsetGet('refundId'));
     }
 
     /**
