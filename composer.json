@@ -16,7 +16,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "CoverGenius\\EbayRestPhpSdk\\Tests\\": "tests/"
         }
     },
     "require": {

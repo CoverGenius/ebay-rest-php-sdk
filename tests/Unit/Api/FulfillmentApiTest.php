@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit\Api;
+namespace CoverGenius\EbayRestPhpSdk\Tests\Unit\Api;
 
 use CoverGenius\EbayRestPhpSdk\Api\FulfillmentApi;
 use PHPUnit\Framework\TestCase;
