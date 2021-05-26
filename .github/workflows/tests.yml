@@ -32,4 +32,4 @@ jobs:
         run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
 
       - name: Execute tests
-        run: vendor/bin/phpunit --verbose
+        run: cp .env.example .env && vendor/bin/phpunit --verbose
