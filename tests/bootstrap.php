@@ -5,14 +5,12 @@ use VCR\VCR;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$dotEnv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../', '.env.example');
+$dotEnv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../', '.env');
 $dotEnv->load();
-
-var_dump(getenv('BASE_URI'));
 
 VCR::configure()
     ->setCassettePath(__DIR__ . '/../tests/vcr')
-    ->setStorage('json')
+    ->setStorage('yaml')
     ->enableLibraryHooks(['stream_wrapper', 'curl'])
     ->enableRequestMatchers(['method', 'url', 'host', 'body'])
     ->setMode('once');
