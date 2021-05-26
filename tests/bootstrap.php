@@ -5,7 +5,7 @@ use VCR\VCR;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$dotEnv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../', '.env');
+$dotEnv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../', '.env.example');
 $dotEnv->load();
 
 var_dump(getenv('BASE_URI'));
