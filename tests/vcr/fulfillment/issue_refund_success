@@ -1,0 +1,67 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.sandbox.ebay.com/sell/fulfillment/v1/order/09-06721-09981/issue_refund'
+        headers:
+            Host: ''
+            Expect: ''
+            Accept-Encoding: ''
+            Authorization: ''
+            User-Agent: ''
+            Content-Type: application/json
+            Accept: ''
+        body: '{"reasonForRefund":"BUYER_CANCEL","orderLevelRefundAmount":{"currency":"USD","value":"0.01"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            rlogid: 't6shrfgostwhciwdvn9%3Fuk%60uksbalrpqkbmqgwj%28l%60pam*w%60ut3522-1795f0e162e-0x235a'
+            x-ebay-client-tls-version: TLSv1.3
+            content-type: application/json
+            content-length: '50'
+            date: 'Wed, 12 May 2021 05:30:34 GMT'
+            x-envoy-upstream-service-time: '5439'
+            server: ebay-proxy-server
+            x-ebay-pop-id: UFES2-RNOAZ03-api
+        body: '{"refundId":"5018168125","refundStatus":"PENDING"}'
+        curl_info:
+            url: 'https://api.sandbox.ebay.com/sell/fulfillment/v1/order/09-06721-09981/issue_refund'
+            content_type: application/json
+            http_code: 200
+            header_size: 335
+            request_size: 2542
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 5.957014
+            namelookup_time: 0.005253
+            connect_time: 0.005381
+            pretransfer_time: 0.339618
+            size_upload: !!float 93
+            size_download: !!float 50
+            speed_download: !!float 8
+            speed_upload: !!float 15
+            download_content_length: !!float 50
+            upload_content_length: !!float 93
+            starttransfer_time: 5.956961
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 209.140.129.1
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 172.30.0.5
+            local_port: 41074
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 339062
+            connect_time_us: 5381
+            namelookup_time_us: 5253
+            pretransfer_time_us: 339618
+            redirect_time_us: 0
+            starttransfer_time_us: 5956961
+            total_time_us: 5957014
