@@ -1,0 +1,39 @@
+{
+    "name": "covergenius/ebay-rest-php-sdk",
+    "description": "https://developer.ebay.com/docs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jeff.nielsen",
+            "email": "jeff.n@covergenius.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CoverGenius\\EbayRestPhpSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoverGenius\\EbayRestPhpSdk\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^6.5|^7.1",
+        "guzzlehttp/guzzle-services": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.3",
+        "php-vcr/php-vcr": "^1.5",
+        "php-vcr/phpunit-testlistener-vcr": "dev-master",
+        "allejo/php-vcr-sanitizer": "dev-master",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --colors=always -v --testdox"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

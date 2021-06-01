@@ -1,0 +1,67 @@
+
+-
+    request:
+        method: GET
+        url: 'https://api.sandbox.ebay.com/sell/fulfillment/v1/order/09-06721-09981'
+        headers:
+            Host: ''
+            Accept-Encoding: ''
+            Authorization: ''
+            User-Agent: ''
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-ebay-c-request-id: 'ri=KqX7bQKIbrjG,rci=979f731744310f70'
+            rlogid: 't6pithqauq%60%3F%3Ctofukqjtcpse*uww1u%28rbpv6770-1795f0e12c9-0x480cbc'
+            x-ebay-c-version: 1.11.0
+            x-ebay-client-tls-version: TLSv1.3
+            set-cookie: 'ebay=%5Esbf%3D%23%5E;Domain=.ebay.com;Path=/; Secure'
+            content-type: application/json
+            content-length: '3133'
+            date: 'Wed, 12 May 2021 05:30:28 GMT'
+            server: ebay-proxy-server
+            x-envoy-upstream-service-time: '208'
+            x-ebay-pop-id: UFES2-RNOAZ03-api
+        body: '{"orderId":"09-06721-09981","legacyOrderId":"313339508728-1105579625021","creationDate":"2021-03-12T00:34:01.000Z","lastModifiedDate":"2021-04-12T23:41:34.000Z","orderFulfillmentStatus":"NOT_STARTED","orderPaymentStatus":"PARTIALLY_REFUNDED","sellerId":"pymnts-test-001","buyer":{"username":"r_and_r_auctions","taxAddress":{"stateOrProvince":"AK","postalCode":"99577-7410","countryCode":"US"}},"pricingSummary":{"priceSubtotal":{"value":"8.04","currency":"USD"},"deliveryCost":{"value":"5.58","currency":"USD"},"deliveryDiscount":{"value":"-4.45","currency":"USD"},"tax":{"value":"0.27","currency":"USD"},"total":{"value":"9.44","currency":"USD"}},"cancelStatus":{"cancelState":"NONE_REQUESTED","cancelRequests":[]},"paymentSummary":{"totalDueSeller":{"value":"-0.84","currency":"USD"},"refunds":[{"refundDate":"2021-04-12T23:41:34.000Z","amount":{"value":"7.0","currency":"USD"},"refundStatus":"REFUNDED","refundReferenceId":"5014696222","refundId":"5014696222"},{"refundDate":"2021-04-12T23:27:17.000Z","amount":{"value":"1.0","currency":"USD"},"refundStatus":"REFUNDED","refundReferenceId":"5014694369","refundId":"5014694369"},{"refundDate":"2021-04-12T22:53:25.000Z","amount":{"value":"1.0","currency":"USD"},"refundStatus":"REFUNDED","refundReferenceId":"5014691687","refundId":"5014691687"}],"payments":[{"paymentMethod":"EBAY","paymentReferenceId":"420004_S","paymentDate":"2021-03-15T10:46:28.000Z","amount":{"value":"8.16","currency":"USD"},"paymentStatus":"PAID"}]},"fulfillmentStartInstructions":[{"fulfillmentInstructionsType":"SHIP_TO","minEstimatedDeliveryDate":"2021-03-17T07:00:00.000Z","maxEstimatedDeliveryDate":"2021-03-30T07:00:00.000Z","ebaySupportedFulfillment":false,"shippingStep":{"shipTo":{"fullName":"Ray Heraldo","contactAddress":{"addressLine1":"11246 Aurora St","city":"Eagle River","stateOrProvince":"AK","postalCode":"99577-7410","countryCode":"US"},"primaryPhone":{"phoneNumber":"4084390890"}},"shippingServiceCode":"Other"}}],"fulfillmentHrefs":[],"lineItems":[{"lineItemId":"10034704132409","legacyItemId":"313339508728","title":"PLEASE DO NOT BID - MP Testing - Make a donation, enable sales tax","lineItemCost":{"value":"8.04","currency":"USD"},"quantity":6,"soldFormat":"FIXED_PRICE","listingMarketplaceId":"EBAY_US","purchaseMarketplaceId":"EBAY_US","lineItemFulfillmentStatus":"NOT_STARTED","total":{"value":"9.44","currency":"USD"},"deliveryCost":{"shippingCost":{"value":"1.13","currency":"USD"},"discountAmount":{"value":"4.45","currency":"USD"}},"appliedPromotions":[],"taxes":[{"amount":{"value":"0.27","currency":"USD"}}],"refunds":[{"refundDate":"2021-04-12T23:41:34.000Z","refundId":"5014696222"},{"refundDate":"2021-04-12T23:27:17.000Z","refundId":"5014694369"},{"refundDate":"2021-04-12T22:53:25.000Z","refundId":"5014691687"}],"lineItemFulfillmentInstructions":{"minEstimatedDeliveryDate":"2021-03-17T07:00:00.000Z","maxEstimatedDeliveryDate":"2021-03-30T07:00:00.000Z","shipByDate":"2021-03-17T06:59:59.000Z","guaranteedDelivery":false}}],"salesRecordReference":"195","totalFeeBasisAmount":{"value":"9.44","currency":"USD"},"totalMarketplaceFee":{"value":"1.28","currency":"USD"}}'
+        curl_info:
+            url: 'https://api.sandbox.ebay.com/sell/fulfillment/v1/order/09-06721-09981'
+            content_type: application/json
+            http_code: 200
+            header_size: 473
+            request_size: 2383
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.777655
+            namelookup_time: 0.012749
+            connect_time: 0.01292
+            pretransfer_time: 0.352179
+            size_upload: !!float 0
+            size_download: !!float 3133
+            speed_download: !!float 4032
+            speed_upload: !!float 0
+            download_content_length: !!float 3133
+            upload_content_length: !!float -1
+            starttransfer_time: 0.777416
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 209.140.129.1
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 172.30.0.5
+            local_port: 41072
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 352028
+            connect_time_us: 12920
+            namelookup_time_us: 12749
+            pretransfer_time_us: 352179
+            redirect_time_us: 0
+            starttransfer_time_us: 777416
+            total_time_us: 777655
